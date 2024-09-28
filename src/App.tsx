@@ -9,7 +9,7 @@ function App() {
   const [ tasks, setTasks ] = useState<TaskType>([]);
 
   useEffect(() => {
-    axios.get("http://agendaapi123456.mypressonline.com/getTasks.php").then((res) => {
+    axios.get("https://agendaapi123456.mypressonline.com/getTasks.php").then((res) => {
       console.log(res.data);
       setTasks(res.data);
     })
